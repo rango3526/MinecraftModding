@@ -1,0 +1,28 @@
+package com.camp.item;
+ 
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+
+import com.camp.lib.StringLibrary;
+
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+ 
+public class CustomItem extends Item {
+ 
+	public CustomItem(){
+	    this.setUnlocalizedName("CustomItem");
+	    this.setCreativeTab(CreativeTabs.tabMisc);
+	    this.setMaxDamage(5);
+	    this.setMaxStackSize(1);
+	    this.setTextureName(StringLibrary.MODID + ":custom_item");
+	}  
+	
+	  
+    @SideOnly(Side.CLIENT)
+    public boolean isFull3D()
+    {
+    	return true;
+    }
+ 
+}

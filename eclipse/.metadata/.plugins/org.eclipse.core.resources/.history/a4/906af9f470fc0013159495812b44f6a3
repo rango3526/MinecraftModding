@@ -1,0 +1,16 @@
+public class DaedricOreManager {
+ 
+    public static void mainRegistry() {
+        intializeBlock();
+        registerBlock();
+    }
+ 
+    public static void initializeBlock() {
+ 
+    }
+ 
+    public static void registerBlock() {
+ 
+    }
+ 
+}

@@ -1,0 +1,33 @@
+package com.camp.recipe;
+ 
+import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
+import net.minecraft.item.ItemStack;
+import cpw.mods.fml.common.registry.GameRegistry;
+ 
+public class RecipeManager{
+ 
+    public static void mainRegistry(){
+        addCraftingRecipes();
+        addSmeltingRecipes();
+ 
+    }//end mainRegistry
+  
+ 
+    public static void addCraftingRecipes() {
+ 
+        //Shapeless Recipes
+ 
+        GameRegistry.addShapelessRecipe(new ItemStack(Items.diamond, 64), Blocks.dirt);
+ 
+        //Shaped Recipes
+ 
+    }//end addCraftingRecipes    
+  
+ 
+    public static void addSmeltingRecipes() {    
+ 
+    } //end addSmeltingRecipes
+    
+}
+ 

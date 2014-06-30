@@ -1,0 +1,10 @@
+package com.camp.item;
+ 
+import net.minecraft.item.Item;
+ 
+public class DaedricIngot extends Item {
+ 
+    public DaedricIngot() {
+    }    
+ 
+}

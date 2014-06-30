@@ -1,0 +1,16 @@
+package com.camp.entity;
+
+public class EntityManager {
+	 
+public static void mainRegistry() {
+ 
+registerEntity();
+ 
+}//end mainRegistry
+ 
+public static void registerEntity() {
+ 
+}//end registerEntity
+ 
+ 
+}//end class

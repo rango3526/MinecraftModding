@@ -1,0 +1,7 @@
+package com.camp.entity;
+ 
+import net.minecraft.entity.monster.EntityMob;
+ 
+public class CustomEntityMob extends EntityMob {
+ 
+}

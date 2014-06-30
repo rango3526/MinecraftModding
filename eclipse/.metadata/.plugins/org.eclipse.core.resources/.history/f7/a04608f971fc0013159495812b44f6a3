@@ -1,0 +1,18 @@
+package com.camp.block;
+
+public class DaedricOreManager {
+ 
+    public static void mainRegistry() {
+        initializeBlock();
+        registerBlock();
+    }
+ 
+    public static void initializeBlock() {
+ 
+    }
+ 
+    public static void registerBlock() {
+ 
+    }
+ 
+}

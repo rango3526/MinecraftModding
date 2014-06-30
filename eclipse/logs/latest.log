@@ -1,0 +1,82 @@
+[20:28:56] [main/INFO]: Loading tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[20:28:56] [main/INFO]: Using primary tweak class name cpw.mods.fml.common.launcher.FMLTweaker
+[20:28:56] [main/INFO]: Calling tweak class cpw.mods.fml.common.launcher.FMLTweaker
+[20:28:56] [main/INFO]: Forge Mod Loader version 7.2.211.1121 for Minecraft 1.7.2 loading
+[20:28:56] [main/INFO]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.7.0_51, running on Windows 8:amd64:6.2, installed at C:\Program Files\Java\jre7
+[20:28:56] [main/INFO]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
+[20:28:56] [main/INFO]: Loading tweak class name cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
+[20:28:56] [main/INFO]: Loading tweak class name cpw.mods.fml.common.launcher.FMLDeobfTweaker
+[20:28:56] [main/INFO]: Calling tweak class cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
+[20:28:56] [main/INFO]: Calling tweak class cpw.mods.fml.common.launcher.FMLInjectionAndSortingTweaker
+[20:28:56] [main/INFO]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
+[20:28:56] [main/ERROR]: The binary patch set is missing. Either you are in a development environment, or things are not going to work!
+[20:28:57] [main/ERROR]: The minecraft jar file:/C:/Users/student/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.2-10.12.2.1121/forgeSrc-1.7.2-10.12.2.1121.jar!/net/minecraft/client/ClientBrandRetriever.class appears to be corrupt! There has been CRITICAL TAMPERING WITH MINECRAFT, it is highly unlikely minecraft will work! STOP NOW, get a clean copy and try again!
+[20:28:57] [main/ERROR]: FML has been ordered to ignore the invalid or missing minecraft certificate. This is very likely to cause a problem!
+[20:28:57] [main/ERROR]: Technical information: ClientBrandRetriever was at jar:file:/C:/Users/student/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.2-10.12.2.1121/forgeSrc-1.7.2-10.12.2.1121.jar!/net/minecraft/client/ClientBrandRetriever.class, there were 0 certificates for it
+[20:28:57] [main/ERROR]: FML appears to be missing any signature data. This is not a good thing
+[20:28:57] [main/INFO]: Calling tweak class cpw.mods.fml.relauncher.CoreModManager$FMLPluginWrapper
+[20:28:57] [main/INFO]: Calling tweak class cpw.mods.fml.common.launcher.FMLDeobfTweaker
+[20:28:57] [main/INFO]: Launching wrapped minecraft {net.minecraft.client.main.Main}
+[20:28:58] [main/INFO]: Setting user: Player347
+[20:28:59] [Client thread/INFO]: LWJGL Version: 2.9.0
+[20:29:00] [Client thread/INFO]: Attempting early MinecraftForge initialization
+[20:29:00] [Client thread/INFO]: MinecraftForge v10.12.2.1121 Initialized
+[20:29:00] [Client thread/INFO]: Replaced 182 ore recipies
+[20:29:00] [Client thread/INFO]: Completed early MinecraftForge initialization
+[20:29:00] [Client thread/INFO]: Searching C:\Users\student\Documents\ForgeModding\eclipse\mods for mods
+[20:29:00] [Client thread/ERROR]: FML has detected a mod that is using a package name based on 'net.minecraft.src' : net.minecraft.src.FMLRenderAccessLibrary. This is generally a severe programming error.  There should be no mod code in the minecraft namespace. MOVE YOUR MOD! If you're in eclipse, select your source code and 'refactor' it into a new package. Go on. DO IT NOW!
+[20:29:01] [Client thread/INFO]: Forge Mod Loader has identified 5 mods to load
+[20:29:02] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Camp Mods, FMLFileResourcePack:Example Mod
+[20:29:02] [Client thread/INFO]: Processing ObjectHolder annotations
+[20:29:02] [Client thread/INFO]: Found 341 ObjectHolder annotations
+[20:29:02] [Client thread/INFO]: Configured a dormant chunk cache size of 0
+[20:29:02] [Client thread/INFO]: Applying holder lookups
+[20:29:02] [Client thread/INFO]: Holder lookups applied
+[20:29:02] [Sound Library Loader/INFO]: Sound engine started
+[20:29:03] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[20:29:03] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[20:29:03] [Client thread/INFO]: Forge Mod Loader has successfully loaded 5 mods
+[20:29:03] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Camp Mods, FMLFileResourcePack:Example Mod
+[20:29:03] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[20:29:03] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[20:29:04] [Sound Library Loader/INFO]: Sound engine started
+[20:29:04] [MCO Availability Checker #1/ERROR]: Couldn't connect to Realms
+[20:29:08] [Server thread/INFO]: Starting integrated minecraft server version 1.7.2
+[20:29:08] [Server thread/INFO]: Generating keypair
+[20:29:08] [Server thread/INFO]: Injecting existing block and item data into this server instance
+[20:29:08] [Server thread/INFO]: Applying holder lookups
+[20:29:08] [Server thread/INFO]: Holder lookups applied
+[20:29:08] [Server thread/INFO]: Loading dimension 0 (flatTest) (net.minecraft.server.integrated.IntegratedServer@503f5489)
+[20:29:08] [Server thread/INFO]: Loading dimension 1 (flatTest) (net.minecraft.server.integrated.IntegratedServer@503f5489)
+[20:29:08] [Server thread/INFO]: Loading dimension -1 (flatTest) (net.minecraft.server.integrated.IntegratedServer@503f5489)
+[20:29:08] [Server thread/INFO]: Preparing start region for level 0
+[20:29:09] [Server thread/INFO]: Preparing spawn area: 80%
+[20:29:09] [Netty Client IO #0/INFO]: Server protocol version 1
+[20:29:09] [Netty IO #1/INFO]: Client protocol version 1
+[20:29:09] [Netty IO #1/INFO]: Client attempting to join with 5 mods : mcp@9.03,FML@7.2.211.1121,cm@1.0,examplemod@1.0,Forge@10.12.2.1121
+[20:29:09] [Netty IO #1/INFO]: Attempting connection with missing mods [] at CLIENT
+[20:29:09] [Netty Client IO #0/INFO]: Attempting connection with missing mods [] at SERVER
+[20:29:10] [Client thread/INFO]: [Client thread] Client side modded connection established
+[20:29:10] [Server thread/INFO]: [Server thread] Server side modded connection established
+[20:29:10] [Server thread/INFO]: Player347[local:E:35aa3c98] logged in with entity id 163 at (-601.4763668008802, 4.0, -877.6637847923944)
+[20:29:10] [Server thread/INFO]: Player347 joined the game
+[20:29:14] [Server thread/INFO]: Player347 has just earned the achievement [Taking Inventory]
+[20:29:14] [Client thread/INFO]: [CHAT] Player347 has just earned the achievement [Taking Inventory]
+[20:29:18] [Server thread/INFO]: [Player347: Set own game mode to Creative Mode]
+[20:29:18] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[20:30:32] [Server thread/INFO]: Saving and pausing game...
+[20:30:32] [Server thread/INFO]: Saving chunks for level 'flatTest'/Overworld
+[20:30:32] [Server thread/INFO]: Saving chunks for level 'flatTest'/Nether
+[20:30:32] [Server thread/INFO]: Saving chunks for level 'flatTest'/The End
+[20:30:33] [Server thread/INFO]: Stopping server
+[20:30:33] [Server thread/INFO]: Saving players
+[20:30:33] [Server thread/INFO]: Saving worlds
+[20:30:33] [Server thread/INFO]: Saving chunks for level 'flatTest'/Overworld
+[20:30:33] [Server thread/INFO]: Saving chunks for level 'flatTest'/Nether
+[20:30:33] [Server thread/INFO]: Saving chunks for level 'flatTest'/The End
+[20:30:33] [Server thread/INFO]: Unloading dimension 0
+[20:30:33] [Server thread/INFO]: Unloading dimension -1
+[20:30:33] [Server thread/INFO]: Unloading dimension 1
+[20:30:33] [Server thread/INFO]: Applying holder lookups
+[20:30:33] [Server thread/INFO]: Holder lookups applied
+[20:30:34] [Client thread/INFO]: Stopping!

@@ -1,0 +1,4 @@
+item.CustomItem.name=Daedric Sword
+item.DaedricIngot.name=Daedric Ingot
+tile.DaedricOre.name=Daedric Ore
+entity.CustomEntityMob.name=Demon

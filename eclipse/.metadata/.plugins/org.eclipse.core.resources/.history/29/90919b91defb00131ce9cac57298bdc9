@@ -1,0 +1,18 @@
+package com.camp.item;
+
+public class ItemManager {
+	 
+    public static void mainRegistry() {
+        initializeItem();
+        registerItem();
+    }
+ 
+    public static void initializeItem() {
+ 
+    }
+ 
+    public static void registerItem() {
+ 
+    }
+ 
+}

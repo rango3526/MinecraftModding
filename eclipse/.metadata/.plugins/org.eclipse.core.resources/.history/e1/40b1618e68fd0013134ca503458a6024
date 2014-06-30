@@ -1,0 +1,17 @@
+package com.camp.item;
+ 
+import net.minecraft.item.ItemPickaxe;
+ 
+public class CustomPickaxe1 extends ItemPickaxe {
+
+	private static ToolMaterial p_i45347_1_;
+
+	protected CustomPickaxe1() {
+		super(p_i45347_1_);
+		// TODO Auto-generated constructor stub
+	}
+
+	public CustomPickaxe1() {
+		// TODO Auto-generated constructor stub
+	}
+}

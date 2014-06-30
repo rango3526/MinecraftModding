@@ -1,0 +1,24 @@
+package com.camp.entity; 
+ 
+import net.minecraft.entity.EntityAgeable;
+import net.minecraft.entity.passive.EntityAnimal;
+import net.minecraft.world.World;
+ 
+public class CustomEntityPassive extends EntityAnimal{
+ 
+public CustomEntityPassive(World par1World) {
+super(par1World);
+// TODO Auto-generated constructor stub
+}//end constructor
+ 
+@Override
+public EntityAgeable createChild(EntityAgeable var1) {
+// TODO Auto-generated method stub
+return new CustomEntityPassive(worldObj);
+}//end createChild
+ 
+protected void applyEntityAttributes() {
+super.applyEntityAttributes();
+}//end applyEntityAttributes
+ 
+}
