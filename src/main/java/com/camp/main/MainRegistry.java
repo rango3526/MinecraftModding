@@ -31,8 +31,8 @@ public class MainRegistry {
     */
     @EventHandler
     public static void PreLoad(FMLPreInitializationEvent Prevent) {
-    	DaedricIngotManager.mainRegistry();
     	DaedricOreManager.mainRegistry();
+    	DaedricIngotManager.mainRegistry();
     	ItemManager.mainRegistry();
     	RecipeManager.mainRegistry();
     	proxy.registerRenderThings();

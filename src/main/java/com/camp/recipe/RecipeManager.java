@@ -29,7 +29,16 @@ public class RecipeManager{
         
         GameRegistry.addShapedRecipe(new ItemStack(Items.carrot), "xyx", "y y", "xyx", 'x', Blocks.stone, 'y', Blocks.gravel);
         GameRegistry.addShapedRecipe(new ItemStack(ItemManager.customItem), " x ", " x ", " y ", 'x', DaedricIngotManager.customItem, 'y', Items.blaze_rod );
- 
+        GameRegistry.addShapedRecipe(new ItemStack(ItemManager.customPickaxe), "xxx", " y ", " y ", 'x', DaedricIngotManager.customItem, 'y', Items.blaze_rod );
+        GameRegistry.addShapedRecipe(new ItemStack(ItemManager.customAxe), "xx ", "xy ", " y ", 'x', DaedricIngotManager.customItem, 'y', Items.blaze_rod );
+        GameRegistry.addShapedRecipe(new ItemStack(ItemManager.customShovel), " x ", " y ", " y ", 'x', DaedricIngotManager.customItem, 'y', Items.blaze_rod );
+        GameRegistry.addShapedRecipe(new ItemStack(ItemManager.customHoe), "xx ", " y ", " y ", 'x', DaedricIngotManager.customItem, 'y', Items.blaze_rod );
+        GameRegistry.addShapedRecipe(new ItemStack(ItemManager.customSeeds, 6), "   ", " x ", "   ", 'x', DaedricIngotManager.customFood);
+        GameRegistry.addShapedRecipe(new ItemStack(ItemManager.customHelmet),  "xxx", "x x", "   ", 'x', DaedricIngotManager.customItem);
+        GameRegistry.addShapedRecipe(new ItemStack(ItemManager.customChestplate),  "x x", "xxx", "xxx", 'x', DaedricIngotManager.customItem);
+        GameRegistry.addShapedRecipe(new ItemStack(ItemManager.customLeggings),  "xxx", "x x", "x x", 'x', DaedricIngotManager.customItem);
+        GameRegistry.addShapedRecipe(new ItemStack(ItemManager.customBoots),  "x x", "x x", "   ", 'x', DaedricIngotManager.customItem);
+        GameRegistry.addShapedRecipe(new ItemStack(ItemManager.bossSpawn),  "xyx", "yzy", "xyx", 'y', DaedricIngotManager.customFood, 'x', DaedricIngotManager.customItem, 'z', Items.blaze_powder);
     }//end addCraftingRecipes    
   
  

@@ -1,0 +1,13 @@
+package com.camp.item;
+ 
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+ 
+public class BossSpawn extends Item {
+	public BossSpawn(){
+	    this.setUnlocalizedName("CustomItem");
+	    this.setCreativeTab(CreativeTabs.tabMisc);
+	}
+ 
+}
+ 

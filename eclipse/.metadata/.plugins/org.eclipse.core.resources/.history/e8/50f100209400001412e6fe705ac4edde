@@ -1,0 +1,24 @@
+package com.camp.main;
+
+import net.minecraft.client.model.ModelBiped;
+
+import com.camp.entity.CustomEntityMob;
+import com.camp.entity.DevilEntity;
+import com.camp.model.devil_biped;
+import com.camp.render.RenderDevil;
+import com.camp.render.RenderDevil1;
+
+import cpw.mods.fml.client.registry.RenderingRegistry;
+ 
+public class ClientProxy extends ServerProxy {
+ 
+    public void registerRenderThings() {      
+    	RenderingRegistry.registerEntityRenderingHandler(CustomEntityMob.class, new RenderDevil(new ModelBiped(), 0));
+    	RenderingRegistry.registerEntityRenderingHandler(DevilEntity.class, new RenderDevil1(new devil_biped(), 0));
+    }
+    
+    public int addArmor(String armor) {
+        return RenderingRegistry.addNewArmourRendererPrefix(armor);
+    }
+
+}

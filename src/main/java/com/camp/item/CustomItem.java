@@ -40,7 +40,7 @@ public class CustomItem extends Item {
 	    this.setMaxDamage(2000);
 	    this.setMaxStackSize(1);
 	    this.setTextureName(StringLibrary.MODID + ":custom_item");
-	    this.field_150934_a = 8;
+	    this.field_150934_a = 100000000; // 8
     }
 
     /*public float func_150931_i()

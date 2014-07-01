@@ -2,5 +2,8 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="net.minecraft.item.Item"/>
 <fullyQualifiedTypeName name="com.camp.item.CustomPickManager"/>
+<fullyQualifiedTypeName name="com.camp.item.PickaxeManager"/>
 <fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
+<fullyQualifiedTypeName name="com.camp.render.RenderCustomBiped"/>
+<fullyQualifiedTypeName name="com.jcraft.jorbis.Block"/>
 </qualifiedTypeNameHistroy>

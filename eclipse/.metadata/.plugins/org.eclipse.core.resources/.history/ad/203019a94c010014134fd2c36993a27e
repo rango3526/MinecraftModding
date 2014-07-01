@@ -1,0 +1,17 @@
+package com.camp.item;
+ 
+import com.camp.lib.StringLibrary;
+
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+ 
+public class BossSpawn extends Item {
+	public BossSpawn(){
+		this.setUnlocalizedName("BossSpawn");
+        this.setCreativeTab(CreativeTabs.tabMaterials);
+        this.setMaxStackSize(64);
+        this.setTextureName(StringLibrary.MODID + ":boss_spawn_texture");
+	}
+ 
+}
+ 

@@ -1,0 +1,7 @@
+package com.camp.block;
+
+import net.minecraft.block.Block;
+
+public class CustomBlockCrops extends Block {
+
+}

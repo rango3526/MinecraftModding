@@ -59,6 +59,6 @@ public class CustomEntityMob extends EntityMob {
     }
     @Override
     public void dropRareDrop(int par1) {
-        this.dropItem(ItemManager.customItem, 1);
+        this.dropItem(DaedricIngotManager.customFood, 1);
     }
 }
