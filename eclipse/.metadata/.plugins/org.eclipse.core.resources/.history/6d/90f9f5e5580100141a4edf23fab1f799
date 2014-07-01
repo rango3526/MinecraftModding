@@ -26,7 +26,6 @@ public class BossSpawn extends Item {
 			//ent.initCreature();
 			par1world.spawnEntityInWorld(ent);
 			ent.setLocationAndAngles(x, y+1, z, zOffSet, zOffSet);
-			--item.stackSize;
 		}
 		return true;
 	}
