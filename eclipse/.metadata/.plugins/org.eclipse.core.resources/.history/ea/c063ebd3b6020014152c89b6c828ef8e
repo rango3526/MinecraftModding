@@ -1,0 +1,18 @@
+package com.camp.block;
+
+import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
+
+import com.camp.lib.StringLibrary;
+import com.jcraft.jorbis.Block;
+import com.jcraft.jorbis.DspState;
+
+public class BlockGrenade extends Block {
+
+	public BlockGrenade(DspState vd) {
+		super(vd);
+		// TODO Auto-generated constructor stub
+	}
+
+	
+}

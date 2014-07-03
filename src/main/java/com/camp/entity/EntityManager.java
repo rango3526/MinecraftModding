@@ -3,6 +3,9 @@ package com.camp.entity;
 import net.minecraft.entity.EntityList;
 import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.world.biome.BiomeGenBase;
+
+import com.camp.main.MainRegistry;
+
 import cpw.mods.fml.common.registry.EntityRegistry;
 
 public class EntityManager {
@@ -21,7 +24,7 @@ public class EntityManager {
     }
     
     public static void spawnEntity() {
-        addSpawn(CustomEntityMob.class, 100000, 1, 2, EnumCreatureType.monster, new BiomeGenBase[]{
+        addSpawn(CustomEntityMob.class, 100, 1, 2, EnumCreatureType.monster, new BiomeGenBase[]{
         	BiomeGenBase.hell
         });
     }
@@ -29,6 +32,12 @@ public class EntityManager {
     public static void registerEntity(){
         createEntity(CustomEntityMob.class, "CustomEntityMob", 0x000000, 0xFF0000);
         createEntity(DevilEntity.class, "DevilEntity", 0xFF0000, 0x000000);
+        createEntity(EntityGrenade.class, "Grenade");
+    }
+    
+    public static void createEntity(Class entityClass, String entityName) {
+        int entityId = EntityRegistry.findGlobalUniqueEntityId();
+        EntityRegistry.registerModEntity(entityClass, entityName, entityId, MainRegistry.modInstance, 64, 1, true);
     }
  
     public static void createEntity(Class entityClass, String entityName, int solidColor, int spotColor) {

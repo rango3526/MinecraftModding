@@ -16,15 +16,24 @@ public class DaedricOreManager {
     
     public static Block daedricOre;
     public static Block customBlockCrops;
+    public static Block blockGrenade;
+    public static Block daedricBlock;
+    public static Block compressedTNT;
  
     public static void initializeBlock() {
     	daedricOre = new DaedricOre(Material.rock);
     	customBlockCrops = new CustomBlockCrops().setCreativeTab(CreativeTabs.tabBlock).setBlockName("CustomBlockCrops").setBlockTextureName(StringLibrary.MODID + ":pepperPlant");
+    	blockGrenade = new BlockGrenade(Material.rock);
+    	daedricBlock = new DaedricBlock(Material.rock);
+    	compressedTNT = new CompressedTNT(Material.rock);
     }
  
     public static void registerBlock() {
     	GameRegistry.registerBlock(daedricOre, daedricOre.getUnlocalizedName());
     	GameRegistry.registerBlock(customBlockCrops, customBlockCrops.getUnlocalizedName());
+    	GameRegistry.registerBlock(blockGrenade, blockGrenade.getUnlocalizedName());
+    	GameRegistry.registerBlock(daedricBlock, daedricBlock.getUnlocalizedName());
+    	GameRegistry.registerBlock(compressedTNT, compressedTNT.getUnlocalizedName());
     }
  
 }

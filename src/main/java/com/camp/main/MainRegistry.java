@@ -9,6 +9,7 @@ import com.camp.recipe.RecipeManager;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
@@ -18,8 +19,10 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 public class MainRegistry {    
 	 
     @SidedProxy(clientSide = "com.camp.main.ClientProxy", serverSide = "com.camp.main.ServerProxy")
- 
     public static ClientProxy proxy;
+    
+    @Instance(value = StringLibrary.MODID)
+    public static MainRegistry modInstance;
  
     /**
     * Loads before

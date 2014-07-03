@@ -1,0 +1,7 @@
+package com.camp.entity;
+
+import net.minecraft.entity.projectile.EntityArrow;
+
+public class FireArrow extends EntityArrow {
+
+}

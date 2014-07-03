@@ -36,6 +36,7 @@ public class DevilEntity extends EntityMob {
 		this.getEntityAttribute(SharedMonsterAttributes.maxHealth).setBaseValue(400.0D);
 		this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setBaseValue(0.4D);
 		this.getEntityAttribute(SharedMonsterAttributes.attackDamage).setBaseValue(10D);
+		
 		this.isImmuneToFire = true;
     }
  
@@ -46,6 +47,8 @@ public class DevilEntity extends EntityMob {
     @Override
     public void dropFewItems(boolean recentlyHit, int lootLevel) {
         int quantity = this.rand.nextInt(4) + 1;
+        
+        this.dropItem(ItemManager.diabolicStar, 1);
      
         for (int i = 0; i < quantity; i++) {
             if (this.isBurning()) {
@@ -56,12 +59,13 @@ public class DevilEntity extends EntityMob {
             else {
             	this.dropItem(DaedricIngotManager.customItem, 1);
             	this.dropItem(Items.blaze_rod, 1);
+            	
             }
         }
      
     }
     @Override
     public void dropRareDrop(int par1) {
-        this.dropItem(ItemManager.customItem, 1);
+        this.dropItem(ItemManager.grenade, 1);
     }
 }

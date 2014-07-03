@@ -1,0 +1,40 @@
+package com.camp.entity;
+
+import net.minecraft.entity.EntityList;
+import net.minecraft.entity.EnumCreatureType;
+import net.minecraft.world.biome.BiomeGenBase;
+import cpw.mods.fml.common.registry.EntityRegistry;
+
+public class EntityManager {
+	 
+    public static void mainRegistry() {
+        registerEntity();
+        spawnEntity();
+    }
+    
+    public static void addSpawn(Class entityClass, int probability, int min, int max, EnumCreatureType type, BiomeGenBase[] biomeGenBases) {
+        for (int i = 0; i < BiomeGenBase.getBiomeGenArray().length; i++) {
+            if (BiomeGenBase.getBiomeGenArray()[i] != null) {
+                EntityRegistry.addSpawn(entityClass, probability, min, max, type, BiomeGenBase.getBiomeGenArray()[i]);
+            }
+        }
+    }
+    
+    public static void spawnEntity() {
+        addSpawn(CustomEntityMob.class, 100000, 1, 2, EnumCreatureType.monster, new BiomeGenBase[]{
+        	BiomeGenBase.hell
+        });
+    }
+ 
+    public static void registerEntity(){
+        createEntity(CustomEntityMob.class, "CustomEntityMob", 0x000000, 0xFF0000);
+        createEntity(DevilEntity.class, "DevilEntity", 0xFF0000, 0x000000);
+    }
+ 
+    public static void createEntity(Class entityClass, String entityName, int solidColor, int spotColor) {
+        int entityId = EntityRegistry.findGlobalUniqueEntityId();
+        EntityRegistry.registerGlobalEntityID(entityClass, entityName, entityId);
+        EntityList.entityEggs.put(Integer.valueOf(entityId), new EntityList.EntityEggInfo(entityId, solidColor, spotColor));
+    }
+ 
+}

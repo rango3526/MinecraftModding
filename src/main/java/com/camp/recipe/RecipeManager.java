@@ -38,13 +38,28 @@ public class RecipeManager{
         GameRegistry.addShapedRecipe(new ItemStack(ItemManager.customChestplate),  "x x", "xxx", "xxx", 'x', DaedricIngotManager.customItem);
         GameRegistry.addShapedRecipe(new ItemStack(ItemManager.customLeggings),  "xxx", "x x", "x x", 'x', DaedricIngotManager.customItem);
         GameRegistry.addShapedRecipe(new ItemStack(ItemManager.customBoots),  "x x", "x x", "   ", 'x', DaedricIngotManager.customItem);
-        GameRegistry.addShapedRecipe(new ItemStack(ItemManager.bossSpawn),  "xyu", "yzy", "wyx", 'y', DaedricIngotManager.customFood, 'x', DaedricIngotManager.customItem, 'z', Blocks.diamond_block, 'w', Items.blaze_rod, 'u', Blocks.obsidian);
-    }//end addCraftingRecipes    
+        GameRegistry.addShapedRecipe(new ItemStack(ItemManager.bossSpawn),  "xyx", "yzy", "xyx", 'y', Items.diamond, 'x', Blocks.obsidian, 'z', ItemManager.diabolicEssence);
+        GameRegistry.addShapedRecipe(new ItemStack(ItemManager.fireBow), "xy ", "x z", "xy", 'x', Items.string, 'y', Items.blaze_rod, 'z', ItemManager.bossSpawn);
+        GameRegistry.addShapedRecipe(new ItemStack(ItemManager.grenade), "yxy", "xzx", "yxy", 'x', Items.gunpowder, 'y', DaedricIngotManager.customItem, 'z', ItemManager.diabolicEssence);
+        GameRegistry.addShapedRecipe(new ItemStack(ItemManager.diabolicEssence), "xyu", "yzy", "wyx", 'x', DaedricIngotManager.customItem, 'y', DaedricIngotManager.customFood, 'z', Items.lava_bucket, 'w', Items.blaze_rod, 'u', Blocks.obsidian);
+        GameRegistry.addShapedRecipe(new ItemStack(ItemManager.enderRod), "xxx", "xyx", "xxx", 'x', Items.blaze_rod, 'y', Items.ender_eye);
+        GameRegistry.addShapedRecipe(new ItemStack(DaedricOreManager.daedricBlock), "xxx", "xxx", "xxx", 'x', DaedricIngotManager.customItem);
+        GameRegistry.addShapedRecipe(new ItemStack(DaedricOreManager.compressedTNT), "xxx", "xxx", "xxx", 'x', Blocks.tnt);
+        GameRegistry.addShapedRecipe(new ItemStack(ItemManager.partBowString), "xyx", "xzx", "xyx", 'x', Items.string, 'y', Blocks.gold_block, 'z', DaedricOreManager.daedricBlock);
+        GameRegistry.addShapedRecipe(new ItemStack(ItemManager.fullBowString), " yx", "yzy", "xy ", 'x', ItemManager.partBowString, 'y', Blocks.redstone_block, 'z', ItemManager.enderRod);
+        GameRegistry.addShapedRecipe(new ItemStack(ItemManager.explodeBow), " xw", "y w", " zw", 'x', ItemManager.bowTop, 'y', ItemManager.bowMiddle, 'z', ItemManager.bowBottom, 'w', ItemManager.fullBowString);
+        GameRegistry.addShapedRecipe(new ItemStack(ItemManager.bowBottom), "x  ", "yz ", "  w", 'x', Items.flint_and_steel, 'y', Blocks.iron_block, 'z', Blocks.obsidian, 'w', DaedricOreManager.daedricBlock);
+        GameRegistry.addShapedRecipe(new ItemStack(ItemManager.bowMiddle), "xyx", "zwz", "xyx", 'x', Blocks.obsidian, 'y', ItemManager.enderRod, 'z', Blocks.diamond_block, 'w', ItemManager.diabolicStar);
+        GameRegistry.addShapedRecipe(new ItemStack(ItemManager.bowTop), " xy", "xyz", "xyz", 'x', DaedricOreManager.compressedTNT, 'y', ItemManager.enderRod, 'z', Blocks.obsidian);
+        
+        
+    }    
   
  
     public static void addSmeltingRecipes() {    
     	GameRegistry.addSmelting(new ItemStack(DaedricOreManager.daedricOre), new ItemStack(DaedricIngotManager.customItem), 10F);
-    } //end addSmeltingRecipes
+    	//GameRegistry.addSmelting(new ItemStack(ItemManager.bossSpawn), new ItemStack(ItemManager.));
+    }
     
 }
  

@@ -36,6 +36,7 @@ public class CustomEntityMob extends EntityMob {
 		this.getEntityAttribute(SharedMonsterAttributes.maxHealth).setBaseValue(200.0D);
 		this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setBaseValue(0.4D);
 		this.getEntityAttribute(SharedMonsterAttributes.attackDamage).setBaseValue(8.0D);  
+		
 		this.isImmuneToFire = true;
     }
  

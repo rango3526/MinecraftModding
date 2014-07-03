@@ -37,10 +37,31 @@ public class ItemManager {
     public static Item customSeeds;
     public static Item customItemCrops;
     public static Item bossSpawn;
+    public static Item fireBow;
+    public static Item grenade;
+    public static Item diabolicEssence;
+    
+    
+    public static Item explodeBow;
+    public static Item enderRod;
+    public static Item partBowString;
+    public static Item fullBowString;
+    public static Item bowTop;
+    public static Item bowMiddle;
+    public static Item bowBottom;
+    public static Item diabolicStar;
           
     public static void initializeItem() {
         customItem = new CustomItem(rubyMat);
         bossSpawn = new BossSpawn();
+        diabolicEssence = new DiabolicEssence();
+        enderRod = new EnderRod();
+        partBowString = new PartBowString();
+        fullBowString = new FullBowString();
+        bowTop = new BowTop();
+        bowMiddle = new BowMiddle();
+        bowBottom = new BowBottom();
+        diabolicStar= new DiabolicStar();
         customPickaxe = new CustomPickaxe(customToolMaterial).setUnlocalizedName("CustomPickaxe").setCreativeTab(CreativeTabs.tabTools).setTextureName("cm:custom_pickaxe");
         customShovel = new CustomShovel(customToolMaterial).setUnlocalizedName("CustomShovel").setCreativeTab(CreativeTabs.tabTools).setTextureName("cm:custom_shovel");
         customAxe = new CustomAxe(customToolMaterial).setUnlocalizedName("CustomAxe").setCreativeTab(CreativeTabs.tabTools).setTextureName("cm:custom_axe");
@@ -52,6 +73,10 @@ public class ItemManager {
         
         customSeeds = new ItemSeeds(DaedricOreManager.customBlockCrops, Blocks.farmland).setCreativeTab(CreativeTabs.tabMisc).setUnlocalizedName("CustomSeeds").setTextureName(StringLibrary.MODID + ":pepperSeeds");
         customItemCrops = new Item().setCreativeTab(CreativeTabs.tabMisc).setUnlocalizedName("CustomItemCrops").setTextureName(StringLibrary.MODID + ":custom_item_crops");
+        
+        fireBow = new FireBow().setUnlocalizedName("FireBow").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":fire_bow");
+        grenade = new ItemGrenade().setUnlocalizedName("Grenade").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":unstableDaedricOrb");
+        explodeBow = new ExplodeBow().setUnlocalizedName("ExplodeBow").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":explosive_bow");
     }
           
     public static void registerItem() {
@@ -67,6 +92,17 @@ public class ItemManager {
          GameRegistry.registerItem(customSeeds, customSeeds.getUnlocalizedName());
          GameRegistry.registerItem(customItemCrops, customItemCrops.getUnlocalizedName());
          GameRegistry.registerItem(bossSpawn, bossSpawn.getUnlocalizedName());
+         GameRegistry.registerItem(fireBow, fireBow.getUnlocalizedName());
+         GameRegistry.registerItem(grenade, grenade.getUnlocalizedName());
+         GameRegistry.registerItem(diabolicEssence, diabolicEssence.getUnlocalizedName());
+         GameRegistry.registerItem(explodeBow, explodeBow.getUnlocalizedName());
+         GameRegistry.registerItem(enderRod, enderRod.getUnlocalizedName());
+         GameRegistry.registerItem(partBowString, partBowString.getUnlocalizedName());
+         GameRegistry.registerItem(fullBowString, fullBowString.getUnlocalizedName());
+         GameRegistry.registerItem(bowTop, bowTop.getUnlocalizedName());
+         GameRegistry.registerItem(bowMiddle, bowMiddle.getUnlocalizedName());
+         GameRegistry.registerItem(bowBottom, bowBottom.getUnlocalizedName());
+         GameRegistry.registerItem(diabolicStar, diabolicStar.getUnlocalizedName());
     }
          
 }
