@@ -1,6 +1,6 @@
 package com.camp.item;
  
-import com.camp.entity.EntityGrenade;
+import com.camp.entity.CustomEntityGrenade;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
@@ -15,7 +15,7 @@ public class ItemGrenade extends Item {
         }
  
         if(!world.isRemote){
-            world.spawnEntityInWorld(new EntityGrenade(world, player));
+            world.spawnEntityInWorld(new CustomEntityGrenade(world, player));
         }
  
         return stack;

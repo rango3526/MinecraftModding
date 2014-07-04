@@ -32,7 +32,7 @@ public class EntityManager {
     public static void registerEntity(){
         createEntity(CustomEntityMob.class, "CustomEntityMob", 0x000000, 0xFF0000);
         createEntity(DevilEntity.class, "DevilEntity", 0xFF0000, 0x000000);
-        createEntity(EntityGrenade.class, "Grenade");
+        createEntity(CustomEntityGrenade.class, "Grenade");
     }
     
     public static void createEntity(Class entityClass, String entityName) {

@@ -35,7 +35,7 @@ public class ItemManager {
     public static ArmorMaterial customArmorMaterial = EnumHelper.addArmorMaterial("CustomArmorMaterial", 40, new int[]{3, 7, 5, 4}, 25);
     
     public static Item customSeeds;
-    public static Item customItemCrops;
+    //public static Item customItemCrops;
     public static Item bossSpawn;
     public static Item fireBow;
     public static Item grenade;
@@ -52,7 +52,7 @@ public class ItemManager {
     public static Item diabolicStar;
           
     public static void initializeItem() {
-        customItem = new CustomItem(rubyMat);
+        customItem = new SwordCustom(rubyMat);
         bossSpawn = new BossSpawn();
         diabolicEssence = new DiabolicEssence();
         enderRod = new EnderRod();
@@ -62,19 +62,19 @@ public class ItemManager {
         bowMiddle = new BowMiddle();
         bowBottom = new BowBottom();
         diabolicStar= new DiabolicStar();
-        customPickaxe = new CustomPickaxe(customToolMaterial).setUnlocalizedName("CustomPickaxe").setCreativeTab(CreativeTabs.tabTools).setTextureName("cm:custom_pickaxe");
-        customShovel = new CustomShovel(customToolMaterial).setUnlocalizedName("CustomShovel").setCreativeTab(CreativeTabs.tabTools).setTextureName("cm:custom_shovel");
-        customAxe = new CustomAxe(customToolMaterial).setUnlocalizedName("CustomAxe").setCreativeTab(CreativeTabs.tabTools).setTextureName("cm:custom_axe");
-        customHoe = new CustomHoe(customToolMaterial).setUnlocalizedName("CustomHoe").setCreativeTab(CreativeTabs.tabTools).setTextureName("cm:custom_hoe");
-        customHelmet = new CustomArmor(customArmorMaterial, MainRegistry.proxy.addArmor("CustomHelmet"), 0).setUnlocalizedName("CustomHelmet").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":custom_helmet");
-        customChestplate = new CustomArmor(customArmorMaterial, MainRegistry.proxy.addArmor("CustomChestplate"), 1).setUnlocalizedName("CustomChestplate").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":custom_chestplate");
-        customLeggings = new CustomArmor(customArmorMaterial, MainRegistry.proxy.addArmor("CustomLeggings"), 2).setUnlocalizedName("CustomLeggings").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":custom_leggings");
-        customBoots = new CustomArmor(customArmorMaterial, MainRegistry.proxy.addArmor("CustomBoots"), 3).setUnlocalizedName("CustomBoots").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":custom_boots");
+        customPickaxe = new PickaxeCustom(customToolMaterial).setUnlocalizedName("CustomPickaxe").setCreativeTab(CreativeTabs.tabTools).setTextureName("cm:custom_pickaxe");
+        customShovel = new ShovelCustom(customToolMaterial).setUnlocalizedName("CustomShovel").setCreativeTab(CreativeTabs.tabTools).setTextureName("cm:custom_shovel");
+        customAxe = new AxeCustom(customToolMaterial).setUnlocalizedName("CustomAxe").setCreativeTab(CreativeTabs.tabTools).setTextureName("cm:custom_axe");
+        customHoe = new HoeCustom(customToolMaterial).setUnlocalizedName("CustomHoe").setCreativeTab(CreativeTabs.tabTools).setTextureName("cm:custom_hoe");
+        customHelmet = new ArmorSet(customArmorMaterial, MainRegistry.proxy.addArmor("CustomHelmet"), 0).setUnlocalizedName("CustomHelmet").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":custom_helmet");
+        customChestplate = new ArmorSet(customArmorMaterial, MainRegistry.proxy.addArmor("CustomChestplate"), 1).setUnlocalizedName("CustomChestplate").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":custom_chestplate");
+        customLeggings = new ArmorSet(customArmorMaterial, MainRegistry.proxy.addArmor("CustomLeggings"), 2).setUnlocalizedName("CustomLeggings").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":custom_leggings");
+        customBoots = new ArmorSet(customArmorMaterial, MainRegistry.proxy.addArmor("CustomBoots"), 3).setUnlocalizedName("CustomBoots").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":custom_boots");
         
         customSeeds = new ItemSeeds(DaedricOreManager.customBlockCrops, Blocks.farmland).setCreativeTab(CreativeTabs.tabMisc).setUnlocalizedName("CustomSeeds").setTextureName(StringLibrary.MODID + ":pepperSeeds");
-        customItemCrops = new Item().setCreativeTab(CreativeTabs.tabMisc).setUnlocalizedName("CustomItemCrops").setTextureName(StringLibrary.MODID + ":custom_item_crops");
+        //customItemCrops = new Item().setCreativeTab(CreativeTabs.tabMisc).setUnlocalizedName("CustomItemCrops").setTextureName(StringLibrary.MODID + ":custom_item_crops");
         
-        fireBow = new FireBow().setUnlocalizedName("FireBow").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":fire_bow");
+        fireBow = new FireBow().setUnlocalizedName("FireBow").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":fire_bow_draw");
         grenade = new ItemGrenade().setUnlocalizedName("Grenade").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":unstableDaedricOrb");
         explodeBow = new ExplodeBow().setUnlocalizedName("ExplodeBow").setCreativeTab(CreativeTabs.tabCombat).setTextureName(StringLibrary.MODID + ":explosive_bow");
     }
@@ -90,7 +90,7 @@ public class ItemManager {
          GameRegistry.registerItem(customLeggings, customLeggings.getUnlocalizedName());
          GameRegistry.registerItem(customBoots, customBoots.getUnlocalizedName());
          GameRegistry.registerItem(customSeeds, customSeeds.getUnlocalizedName());
-         GameRegistry.registerItem(customItemCrops, customItemCrops.getUnlocalizedName());
+         //GameRegistry.registerItem(customItemCrops, customItemCrops.getUnlocalizedName());
          GameRegistry.registerItem(bossSpawn, bossSpawn.getUnlocalizedName());
          GameRegistry.registerItem(fireBow, fireBow.getUnlocalizedName());
          GameRegistry.registerItem(grenade, grenade.getUnlocalizedName());

@@ -22,3 +22,18 @@
 1404423336478	Rename resource 'Daedric Star.png'
 1404423391615	Rename resource 'daedric_star.png'
 1404423652484	Move file
+1404481448889	Rename resource 'fire_bow_pulling_0.png'
+1404481465415	Rename resource 'fire_bow_pulling_1.png'
+1404481475261	Rename resource 'fire_bow_pulling_2.png'
+1404481486522	Rename resource 'fire_bow_standby.png'
+1404481628792	Rename type 'CustomBlockCrops'
+1404481659266	Rename type 'EntityGrenade'
+1404481738585	Rename type 'CustomArmor'
+1404481790565	Rename type 'CustomAxe'
+1404481799946	Delete element
+1404481833139	Rename type 'CustomHoe'
+1404481846560	Rename type 'CustomPickaxe'
+1404481868976	Rename type 'CustomShovel'
+1404481887020	Rename type 'CustomItem'
+1404482059478	Rename type 'RenderCustomBiped'
+1404482399382	Delete element
